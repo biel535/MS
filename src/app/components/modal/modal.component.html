@@ -1,0 +1,14 @@
+<div class="modal-title">
+<h1>Dyplomy</h1>
+</div>
+<div class="modal-content">
+  <div *ngFor="let dyplom of dyplomList" class="modal-containter">
+    <h2>{{ dyplom.title }}</h2>
+    <img
+      [src]="dyplom.image"
+      alt="Miniatura dyplomu"
+      (click)="openModal(dyplom.image)"
+      class="dyplom-thumbnail"
+    />
+  </div>
+</div>

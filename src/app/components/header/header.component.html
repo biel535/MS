@@ -1,0 +1,19 @@
+<nav id="my-first">
+      <ul>
+      <li class="logotype">
+        <a href="#">Marta Biel</a>
+      </li>
+      <li class="burger" (click)="toggleMenu()">
+        <i class="material-icons">{{ isMenuOpen ? "close" : "menu" }}</i>
+      </li>
+      <li class="menu" [class.is-open]="isMenuOpen">
+        <a href="#" class="menu-item" routerLink="/">Strona Główna</a>
+        <a href="#" class="menu-item" routerLink="/omnie" >O mnie</a>
+        <a href="#" class="menu-item" routerLink="/oferta1" >Oferta dla firm</a>
+        <a href="#" class="menu-item" routerLink="/oferta2">Oferta dla klientów</a>
+        <a href="#" class="menu-item" routerLink="/blog" >BLOG</a>
+        <a href="#" class="menu-item" routerLink="/modal">Dyplomy</a>
+        <a href="#" class="menu-item" routerLink="/contact">Kontakt</a>
+      </li>
+    </ul>
+  </nav>

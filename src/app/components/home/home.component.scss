@@ -1,0 +1,39 @@
+$btnBreakpoint: 950px;
+
+.bgphoto-container {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  position: relative;
+
+
+}
+.background-photo {
+  max-width: 100%;
+  height: auto;
+}
+.btn {
+  position: absolute;
+  top: 60%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 3vh;
+  padding: 0.8vh 1vh;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.5rem;
+
+
+
+  @media (max-width: $btnBreakpoint) {
+    font-size: 1.5vh;
+  }
+}
+
+.btn:hover {
+  background-color: black;
+}
+

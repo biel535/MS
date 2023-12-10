@@ -1,0 +1,44 @@
+<div class="grid1-container">
+  <img src="../../../assets/online.png" class="oferta-main-img">
+    <div class="discription1"  >
+      <div>
+      <h1></h1>
+      <p>Zindywidualizowany pod pracowników Twojej firmy</p>
+      <p>Bogaty w wiedze praktyczną</p>
+      <p>Bazujący na najnowszych doniesieniach naukowych</p>
+    </div>
+  </div>
+  </div>
+
+  <mat-grid-list [cols]="breakpoint" [rowHeight]="isWindowWidthUnder1000() ? '0.7:0.4' : '0.4:0.1 '" (window:resize)="onResize($event)">
+
+        <mat-grid-tile ><img src="../../../assets/Konsultacja.png" class="oferta-img"></mat-grid-tile>
+        <mat-grid-tile class="discription"  >
+          <div>
+          <h1>Konsultacja indywidualna dietetyczna</h1>
+          <p>Pojedyncze spotkanie na którym omawiamy wybrany przez Ciebie problem. </p>
+          <p>Przed spotkaniem przesylam ankietęz ktora pomoze lepiej mi Ciebie spotkać i poznać Twoje potrzeby.</p>
+          <p> Spotkanie trwa 60 minut, po jego zakończeniu wysyłam do Ciebie podsumowanie.</p>
+        </div>
+        </mat-grid-tile>
+        <mat-grid-tile><img src="../../../assets/PakietKonsu.png" class="oferta-img"></mat-grid-tile>
+        <mat-grid-tile class="discription">
+          <div>
+          <h1>Pakiet konsultacji dietetycznych</h1>
+          <p>Pakiet 3 spotkań 60 minutowych. </p>
+          <p>Przed pierwszą konsultacją przesylam ankietę, ktora pomoze mi lepiej poznać Ciebie i Twoje potrzeby.</p>
+          <p>Na pierwszej konsultacji ustalamy plan działania i krok po kroku realizujesz założone cele.</p>
+          <p>Po każdym spotkaniu przesyłam Ci plik z podsumowaniem, materiałami do pracy i wskazówkami.</p>
+        </div>
+        </mat-grid-tile>
+        <mat-grid-tile><img src="../../../assets/jadlospis1.png" class="oferta-img"></mat-grid-tile>
+        <mat-grid-tile class="discription">
+          <div>
+          <h1>Jadlospis indywidualny 7-dniowy</h1>
+          <p>Możliwy do zakupu wraz z konsultacją indywidualną lub pakietem konsultacji. </p>
+          <p>W trakcie spotkania omawiamy jego formę, po konsultacji uzupełniasz też dodatkowy kwestionariusz,</p>
+          <p> tak żeby jak najlepiej określić Twoje upodobania i preferencje.</p>
+        </div>
+        </mat-grid-tile>
+      </mat-grid-list>
+

@@ -1,0 +1,30 @@
+
+.contactForm{
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem;
+
+}
+.form-image {
+  width: 50vh;
+  height: 50vh;
+  padding: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .formContainer {
+    display: block;
+    justify-content: center;
+    padding: 2rem;
+  }
+}
+
